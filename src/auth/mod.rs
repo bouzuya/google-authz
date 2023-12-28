@@ -22,7 +22,7 @@ impl Default for Config {
     fn default() -> Self {
         Self {
             #[cfg(not(feature = "tonic"))]
-            enforce_https: true,
+            enforce_https: false,
             max_retry: 3,
         }
     }
